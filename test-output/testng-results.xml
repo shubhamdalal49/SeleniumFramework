@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-21T12:45:06Z" name="Suite" finished-at="2024-11-21T12:45:49Z" duration-ms="42901">
+    <groups>
+    </groups>
+    <test started-at="2024-11-21T12:45:06Z" name="Test" finished-at="2024-11-21T12:45:49Z" duration-ms="42901">
+      <class name="qa.test.Testcase1">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.test.Testcase1@66498326]" started-at="2024-11-21T18:15:06Z" name="beforeTestMethod" finished-at="2024-11-21T18:15:06Z" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:qa.test.Testcase1@66498326]" started-at="2024-11-21T18:15:06Z" name="BeforeMethodMethod" finished-at="2024-11-21T18:15:19Z" duration-ms="12742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void qa.test.Testcase1.sampleMethodForEnteringCredentials() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodMethod -->
+        <test-method signature="sampleMethodForEnteringCredentials()[pri:0, instance:qa.test.Testcase1@66498326]" started-at="2024-11-21T18:15:19Z" name="sampleMethodForEnteringCredentials" finished-at="2024-11-21T18:15:40Z" duration-ms="20590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleMethodForEnteringCredentials -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.Testcase1@66498326]" started-at="2024-11-21T18:15:40Z" name="afterMethod" finished-at="2024-11-21T18:15:40Z" duration-ms="768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sampleMethodForEnteringCredentials status=SUCCESS method=Testcase1.sampleMethodForEnteringCredentials()[pri:0, instance:qa.test.Testcase1@66498326] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:qa.test.Testcase1@66498326]" started-at="2024-11-21T18:15:40Z" name="BeforeMethodMethod" finished-at="2024-11-21T18:15:48Z" duration-ms="7752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void qa.test.Testcase1.secondTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodMethod -->
+        <test-method signature="secondTest()[pri:0, instance:qa.test.Testcase1@66498326]" started-at="2024-11-21T18:15:48Z" name="secondTest" finished-at="2024-11-21T18:15:48Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qa.test.Testcase1@66498326]" started-at="2024-11-21T18:15:48Z" name="afterMethod" finished-at="2024-11-21T18:15:49Z" duration-ms="502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=secondTest status=SUCCESS method=Testcase1.secondTest()[pri:0, instance:qa.test.Testcase1@66498326] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setupDriver(java.lang.String)[pri:0, instance:qa.test.Testcase1@66498326]" started-at="2024-11-21T18:15:49Z" name="setupDriver" finished-at="2024-11-21T18:15:49Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a AfterTest annotated setupDriver.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a AfterTest annotated setupDriver.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:244)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:172)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:458)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.afterRun(TestRunner.java:958)
+	at org.testng.TestRunner.run(TestRunner.java:606)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+      </class> <!-- qa.test.Testcase1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
